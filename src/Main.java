@@ -46,7 +46,7 @@ public class Main {
             opcion = scanner.nextInt();
 
             if (opcion == 1) {
-                System.out.println("Sistema operativo.");
+                System.out.println("Mostrar estudiante.");
             } else if (opcion == 2) {
                 System.out.println("Procesando operación...");
             } else if (opcion == 0) {
