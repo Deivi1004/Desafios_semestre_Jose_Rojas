@@ -3,10 +3,6 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
-        Estudiante estudiante = new Estudiante("Ana", "Ingenieria en informatica", 20);
-
-        estudiante.mostrarInformacion();
-
         Scanner scanner = new Scanner(System.in);
 
         System.out.print("Ingrese nombre: ");
@@ -18,9 +14,16 @@ public class Main {
         System.out.print("Ingrese edad: ");
         int edad = scanner.nextInt();
 
-        Estudiante estudiante2 = new Estudiante(nombre, carrera, edad);
+        Estudiante estudiante = new Estudiante(nombre, carrera, edad);
 
-        estudiante2.mostrarInformacion();
+
+        if (edad >= 18){
+            System.out.println("Acceso autorizado");
+        } else{
+            System.out.println("Acceso restringido");
+        }
+
+        estudiante.mostrarInformacion();
 
     }
 }
